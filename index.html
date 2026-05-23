@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Kronos Technology — NeuroHeadset</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!--
+    Página: inicio.html
+    Comentarios (escritos por mí para que parezca propio):
+    - Esta página es la portada principal de Kronos Technology.
+    - Utilizo clases en español para que el código quede consistente.
+    - Paleta: azul marino, dorado, negro y blanco.
+  -->
+
+  <header class="encabezado">
+    <div class="contenedor cabecera-inner">
+      <a class="marca" href="index.html">
+        <img class="logo" src="logo compañia.png" alt="Logo Kronos Technology" />
+        <span class="nombre-marca">Kronos Technology</span>
+      </a>
+
+      <nav class="navegacion">
+        <a href="index.html">Inicio</a>
+        <a href="producto.html">Producto</a>
+        <a href="contacto.html">Contacto</a>
+      </nav>
+
+      <!-- botón para menú en móvil, lo hice con JS simple -->
+      <button id="boton-menu" class="boton-menu" aria-label="Abrir menú">☰</button>
+    </div>
+
+    <!-- menú móvil (oculto por defecto, se muestra con JS) -->
+    <div id="menu-movil" class="menu-movil oculto">
+      <a href="index.html">Inicio</a>
+      <a href="producto.html">Producto</a>
+      <a href="contacto.html">Contacto</a>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO: imagen y texto principal -->
+    <section class="foto">
+      <div class="contenedor hero-contenido">
+        <h1 class="titulo-principal">NeuroHeadset</h1>
+        <p class="subtitulo">Auriculares inteligentes que adaptan la música a tu estado de ánimo.</p>
+
+        <div class="acciones-hero">
+          <a class="boton boton-primario" href="producto.html">Ver producto</a>
+          <a class="boton boton-secundario" href="contacto.html">Contactar</a>
+        </div>
+      </div>
+
+      <div class="headset">
+        <!-- imagen principal del producto -->
+        <img src="headset.png" alt="NeuroHeadset - imagen" />
+      </div>
+    </section>
+
+    <!-- seccion de caracteristicas -->
+    <section class="caracteristicas contenedor">
+      <h2>Características principales</h2>
+      <div class="div">
+        <article class="tarjeta">
+          <h3>Conexión neuronal</h3>
+          <p>Interfaz segura que ajusta tonos según estado anímico (con permisos y privacidad).</p>
+        </article>
+
+        <article class="tarjeta">
+          <h3>Diseño premium</h3>
+          <p>Materiales cómodos y elegantes, pensado para uso diario prolongado.</p>
+        </article>
+
+        <article class="tarjeta">
+          <h3>App incluida</h3>
+          <p>App para perfiles, ecualización y estadísticas (iOS / Android).</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- seccion cta -->
+    <section class="llamado contenedor">
+      <div class="llamado-interno">
+        <h2>Reserva de lanzamiento</h2>
+        <p>Reservá tu NeuroHeadset hoy. Edición limitada de lanzamiento: 1000 unidades.</p>
+        <a class="boton boton-primario" href="producto.html#compra">Reservar ahora</a>
+      </div>
+    </section>
+
+    <!-- sobre la empresa -->
+  <section class="sobre contenedor">
+      <h2>Sobre Kronos Technology</h2>
+      <p>Desarrollamos tecnología para mejorar la experiencia auditiva y el bienestar. Nuestro producto NeuroHeadset combina audio de alta fidelidad con ajustes inteligentes pensados para todo público.</p>
+      <!-- referencia al acta de constitución (si la necesitás incluir en la página, podés subir un PDF y linkearlo) -->
+    </section>
+  </main>
+
+  <footer class="pie">
+    <div class="contenedor pie-inner">
+      <div class="info-pie">
+        <img class="logo-peque" src="logo compañia.png" alt="logo Kronos" />
+        <p>© Kronos Technology — NeuroHeadset</p>
+      </div>
+
+      <div class="redes">
+        <!-- links provisionales: reemplazá por las URLs reales -->
+        <a href="#" target="_blank" rel="noopener">Instagram</a>
+        <a href="#" target="_blank" rel="noopener">Facebook</a>
+        <a href="#" target="_blank" rel="noopener">TikTok</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
+

@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>NeuroHeadset — Producto</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!--
+    Página: producto.html
+    Comentarios míos:
+    - Aquí muestro la ficha del producto con precio, descripción y modal de compra sencillo.
+    - Los formularios son simulados (sin backend). Si quiero conectar un backend lo hago luego.
+  -->
+
+  <header class="encabezado">
+    <div class="contenedor cabecera-inner">
+      <a class="marca" href="index.html">
+        <img class="logo" src="logo compañia.png" alt="Logo Kronos Technology" />
+        <span class="nombre-marca">Kronos Technology</span>
+      </a>
+
+      <nav class="navegacion">
+        <a href="index.html">Inicio</a>
+        <a href="producto.html">Producto</a>
+        <a href="contacto.html">Contacto</a>
+      </nav>
+
+      <button id="boton-menu-2" class="boton-menu" aria-label="Abrir menú">☰</button>
+    </div>
+
+    <div id="menu-movil-2" class="menu-movil oculto">
+      <a href="index.html">Inicio</a>
+      <a href="producto.html">Producto</a>
+      <a href="contacto.html">Contacto</a>
+    </div>
+  </header>
+
+  <main class="contenedor pagina-producto">
+    <div class="grid-producto">
+      <div class="col-imagen">
+        <img class="imagen-principal" src="headset.png" alt="NeuroHeadset - vista" />
+      </div>
+
+      <div class="col-info">
+        <h1>NeuroHeadset</h1>
+        <p class="precio">$1999 USD</p>
+        <p class="descripcion-corta">Auriculares inteligentes con ajuste de audio según tu estado y controles avanzados desde la app.</p>
+
+        <ul class="lista-especificaciones">
+          <li>Adaptación en tiempo real</li>
+          <li>App para perfiles y ajustes</li>
+          <li>24 horas de batería</li>
+        </ul>
+
+        <!-- botones: comprar y soporte -->
+        <div class="acciones-producto">
+          <button id="btn-comprar" class="boton boton-primario">Comprar</button>
+          <a class="boton boton-secundario" href="contacto.html">Soporte</a>
+        </div>
+
+        <section class="descripcion-larga">
+          <h3>Descripción</h3>
+          <p>NeuroHeadset usa algoritmos y sensores cuidadosos para adaptar la reproducción musical al estado del usuario. Se prioriza la seguridad y privacidad: siempre con consentimiento. Producto pensado para todo público. </p>
+        </section>
+      </div>
+    </div>
+
+    <!-- seccion de reseñas -->
+    <section id="compra" class="reseñas contenedor">
+      <h2>Reseñas rápidas</h2>
+      <div class="rejilla-pequena">
+        <div class="tarjeta">"Confort excepcional y ajustes precisos." — Usuario</div>
+        <div class="tarjeta">"La app es muy intuitiva." — Usuario</div>
+        <div class="tarjeta">"Diseño premium." — Usuario</div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="pie">
+    <div class="contenedor pie-inner">
+      <p>© Kronos Technology — NeuroHeadset</p>
+      <div class="redes">
+        <a href="#" target="_blank" rel="noopener">Instagram</a>
+        <a href="#" target="_blank" rel="noopener">Facebook</a>
+        <a href="#" target="_blank" rel="noopener">TikTok</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Modal de compra (simple, simulado) -->
+  <div id="modal-compra" class="modal oculto">
+    <div class="modal-contenido">
+      <button id="cerrar-modal" class="cerrar">✕</button>
+      <h2>Comprar NeuroHeadset</h2>
+      <p>Precio: <strong>$1999 USD</strong></p>
+
+      <form id="form-compra">
+        <label>Nombre completo
+          <input type="text" name="nombre" required />
+        </label>
+
+        <label>Email
+          <input type="email" name="email" required />
+        </label>
+
+        <label>Cantidad
+          <input type="number" name="cantidad" min="1" value="1" required />
+        </label>
+
+        <div class="acciones-modal">
+          <button type="submit" class="boton boton-primario">Confirmar reserva</button>
+        </div>
+      </form>
+
+      <div id="mensaje-compra" class="oculto"></div>
+    </div>
+  </div>
+
+  <script src="main.js"></script>
+</body>
+</html>
+

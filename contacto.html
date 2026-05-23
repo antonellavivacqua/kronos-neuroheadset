@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Contacto — Kronos Technology</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!--
+    Página: contacto.html
+    Comentarios míos:
+    - Aquí pongo los datos de contacto y un formulario sencillo.
+    - El formulario no guarda nada por ahora (simulación).
+  -->
+
+  <header class="encabezado">
+    <div class="contenedor cabecera-inner">
+      <a class="marca" href="index.html">
+        <img class="logo" src="logo compañia.png" alt="Logo Kronos Technology" />
+        <span class="nombre-marca">Kronos Technology</span>
+      </a>
+
+      <nav class="navegacion">
+        <a href="index.html">Inicio</a>
+        <a href="producto.html">Producto</a>
+        <a href="contacto.html">Contacto</a>
+      </nav>
+
+      <button id="boton-menu-3" class="boton-menu" aria-label="Abrir menú">☰</button>
+    </div>
+
+    <div id="menu-movil-3" class="menu-movil oculto">
+      <a href="index.html">Inicio</a>
+      <a href="producto.html">Producto</a>
+      <a href="contacto.html">Contacto</a>
+    </div>
+  </header>
+
+  <main class="contenedor pagina-contacto">
+    <h1>Contacto</h1>
+    <p>Ante cualquier consulta sobre el producto o patrocinio, escribinos.</p>
+
+    <div class="grid-contacto">
+      <div class="tarjeta-contacto">
+        <h3>Correo</h3>
+        <p>contacto@kronostech.com</p>
+      </div>
+
+      <div class="tarjeta-contacto">
+        <h3>Teléfono</h3>
+        <p>+54 9 11 1234 5678</p>
+      </div>
+
+      <div class="tarjeta-contacto">
+        <h3>Redes</h3>
+        <p><a href="#" target="_blank">Instagram</a><br/><a href="#" target="_blank">Facebook</a><br/><a href="#" target="_blank">TikTok</a></p>
+      </div>
+    </div>
+
+    <section class="formulario contenedor">
+      <h2>Enviar mensaje</h2>
+      <form id="form-contacto">
+        <label>Nombre
+          <input type="text" name="nombre" required />
+        </label>
+
+        <label>Email
+          <input type="email" name="email" required />
+        </label>
+
+        <label>Mensaje
+          <textarea name="mensaje" rows="4" required></textarea>
+        </label>
+
+        <button type="submit" class="boton boton-primario">Enviar</button>
+      </form>
+
+      <div id="mensaje-contacto" class="oculto"></div>
+    </section>
+  </main>
+
+  <footer class="pie">
+    <div class="contenedor pie-inner">
+      <p>© Kronos Technology — NeuroHeadset</p>
+      <div class="redes">
+        <a href="#" target="_blank" rel="noopener">Instagram</a>
+        <a href="#" target="_blank" rel="noopener">Facebook</a>
+        <a href="#" target="_blank" rel="noopener">TikTok</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
